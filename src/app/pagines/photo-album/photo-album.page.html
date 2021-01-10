@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Photo-Album</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="tot">
+  <nav><p>National Parks</p></nav>
+  <main>
+    <ul>
+      <li  *ngFor="let elemento of fotos">
+        <img
+          id="{{elemento.id }}"
+          src="{{elemento.src }}"
+          alt="{{elemento.alt }}"
+        />
+        <p>{{elemento.text }}</p>
+      </li>
+    </ul>
+  </main>
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header collapse="undefined">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">NBA-Champions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>NBA champions</h1>
+  <article>
+    <section *ngFor="let elemento of championShips">
+      <h1>{{ elemento.year }}</h1>
+      <h2>{{ elemento.champion }}</h2>
+      <img src="{{ elemento.championUrl }}" alt="" />
+      <ul>
+        <h3>Best players</h3>
+        <li *ngFor="let mejorJugador of elemento.bestPlayers">
+          {{ mejorJugador }}
+        </li>
+      </ul>
+    </section>
+  </article>
+  
+</ion-content>

@@ -1,0 +1,1 @@
+ng run app:serve --host=localhost --port=8100
