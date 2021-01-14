@@ -1,12 +1,14 @@
 $color-nav: #333333;
 $color-text: #f5f5f5;
-$color-fons: #f67878;
 $color-marc: #d2d2d2;
+
+ion-content{
+    --ion-background-color:#f67878;
+}
 
 .tot {
     height: 100%;
     width: 100%;
-    background-color: #f67878;
 
     nav {
         display: flex;
@@ -39,27 +41,20 @@ $color-marc: #d2d2d2;
 
             li {
                 padding: 1.5em;
+                padding-right: 3em;
                 list-style: none;
 
                 img {
                     border: 10px solid $color-marc;
-                }
-
-                #img_0 {
-                    width: 10em;
-                }
-
-                #img_1 {
-                    width: 20em;
-                }
-
-                #img_2 {
                     width: 40em;
                 }
+
             }
         }
 
         p {
+            font-size: 1em;
+            font-weight: bold;
             padding-top: 0.5em;
             /* color: $color-text; */
         }

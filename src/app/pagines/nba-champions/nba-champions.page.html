@@ -9,9 +9,11 @@
   <article>
     <section *ngFor="let elemento of championShips">
       <h1>{{ elemento.year }}</h1>
+      <div class="linia"></div>
       <h2>{{ elemento.champion }}</h2>
       <img src="{{ elemento.championUrl }}" alt="" />
       <ul>
+        <div class="linia"></div>
         <h3>Best players</h3>
         <li *ngFor="let mejorJugador of elemento.bestPlayers">
           {{ mejorJugador }}

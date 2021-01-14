@@ -1,20 +1,63 @@
+ion-content {
+  font-family: Arial, Helvetica, sans-serif;
 
-  article{
+  display: flex;
+
+  .linia{
+    display: flex;
+    align-self: center;
+    height: 2px;
+    width: 90%;
+    background-color: black;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  article {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: center;
 
-    section{
+    section {
       display: flex;
       flex-flow: column;
       justify-content: center;
+      
+      width: 17em;
+      background-color: rgb(184, 183, 183);
+      border-radius: 0.3em;
+      box-shadow: 3px 3px 3px 3px rgb(53, 53, 53);
+      margin: 0.5em 0.5em;
 
-      padding: 0em 3em;
+      h1, h2{
 
-      img{
-        width: 9em;
+        display: flex;
+          justify-content: center;
+      }
+
+      img {
+        display: flex;
+        align-self: center;
+        width: 10em;
         height: 10em;
       }
+
+      ul {
+        h3 {
+          display: flex;
+          justify-content: center;
+          width: 9em;
+          padding-bottom: 0.5em;
+        }
+      }
+      
     }
   }
+}
